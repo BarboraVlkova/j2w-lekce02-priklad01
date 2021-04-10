@@ -33,6 +33,11 @@ public class KostkaController {
 
         ModelAndView result = new ModelAndView("kostka");
         result.addObject("cislo",nahodneCislo);
+        /* ve tride string existuje metoda format */
+        /* jako prvni parametr da text (to je sablona) */
+        /* ma se vlozit cislo v desitkove soustave */
+        /* za carkou je hodnota, ktera se tam ma vlozit */
+        result.addObject("obrazek",String.format("/images/kostka-%d.svg", nahodneCislo));
         return result;
 
     }
