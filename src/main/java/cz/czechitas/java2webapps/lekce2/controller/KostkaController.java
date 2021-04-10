@@ -39,6 +39,5 @@ public class KostkaController {
         /* za carkou je hodnota, ktera se tam ma vlozit */
         result.addObject("obrazek",String.format("/images/kostka-%d.svg", nahodneCislo));
         return result;
-
     }
 }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="cs">                                                /* stranky jsou v cestine */
 <html lang="cs" xmlns:th="http://www.thymeleaf.org">            /* zkopirovano ze stranek z Thymeleaf, rikam, ze je to  sablona */
 <head>
     <meta charset="UTF-8">
@@ -14,7 +13,7 @@
 <body>
 <div>
     <div>
-        <img class="kostka" th:src="${obrazek}" />                   /* vkladam obrazek */
+        <img class="kostka" src="/images/kostka-1.svg" th:src="${obrazek}" />        /* vkladam obrazek */
     </div>
     <div>Padlo číslo: <span th:text="${cislo}">1</span></div>        /* atribut th, misto 1 dosad to co je ve span, vloz tam atribut z modelu, pojmenovany cislo */
 </div>
