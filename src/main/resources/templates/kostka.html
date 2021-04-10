@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">                                                /* stranky jsou v cestine */
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">            /* zkopirovano ze stranek z Thymeleaf, rikam, ze je to  sablona */
+<head>
+    <meta charset="UTF-8">
+    <title>Hod kostkou</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+<div>
+    <div>
+        <img class="kostka" src="/images/kostka-1.svg" />
+    </div>
+    <div>Padlo číslo: <span th:text="${cislo}">1</span></div>        /* atribut th, misto 1 dosad to co je ve span, vloz tam atribut z modelu, pojmenovany cislo */
+</div>
+</body>
+</html>
+
